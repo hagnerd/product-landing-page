@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,108 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Scope+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 
   <link rel="stylesheet" href="index.css">
 
   <!-- Testing Suite -->
   <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </head>
+
 <body>
-  <header>
+
+  <header class="flex--row">
+    <h1>Trackly</h1>
     <!-- Place sticky navbar here  -->
+    <nav class="nav flex--row">
+      <h3>Features</h3>
+      <h3>About Us</h3>
+      <h3>Pricing</h3>
+    </nav>
   </header>
+
   <main>
-    <!-- Place main and sections here -->
+    <section class="">
+      <h2 class="upcase">Sign up to find out more</h2>
+      <form>
+        <input type="email" name="email" placeholder="Enter your email address" />
+        <button class="upcase bg--primary" type="submit">sign me up</button>
+      </form>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <div class="flex--column">
+        <div class="flex--row">
+          <i class="far fa-address-book"></i>
+          <div class="flex--column">
+            <h4>Manage Sales Leads</h4>
+            <p class="features--description"></p>
+          </div>
+        </div>
+        <div class="flex--row">
+          <i class="fas fa-truck-loading"></i>
+          <div class="flex--column">
+            <h4>Make Logistics Easy</h4>
+            <p class="features--description"></p>
+          </div>
+        </div>
+        <div class="flex--row">
+          <i class="fas fa-dollar-sign"></i>
+          <div class="flex--row">
+            <h4>Close Sales Faster</h4>
+            <p class="features--description"></p>
+          </div>
+        </div>
+        <div class="flex--row">
+          <i class="far fa-file-alt"></i>
+          <div class="flex--row">
+            <h4>Keep Better Reecords</h4>
+            <p class="features--description"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <h2>About Us</h2>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2>Pricing</h2>
+      <div class="flex--row">
+        <div class="pricing--card">
+          <h3>Price 1</h3>
+          <h4 class="pricing--price">$20/Month</h4>
+          <p>Feautre 1</p>
+        </div>
+        <div class="pricing--card">
+          <h3>Price 2</h3>
+          <h4 class="pricing--price">$50/Month</h4>
+          <p>Feature 1</p>
+          <p>Feature 2</p>
+        </div>
+        <div class="pricing--card">
+          <h3>Price 3</h3>
+          <h4 class="pricing--price">$1,000/Year</h4>
+          <p>Feature 1</p>
+          <p>Feature 2</p>
+          <p>Feature 3</p>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <footer>
     <!-- Copyright, Contact, Privacy, -->
+    <nav class="flex--row">
+      <a href="">Contact</a>
+      <a href="">Privacy</a>
+    </nav>
+    <p>Copyright 2018&copy;, Trackly, LLC</p>
   </footer>
-  
+
 </body>
 </html>
