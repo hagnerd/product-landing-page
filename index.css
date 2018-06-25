@@ -1,0 +1,275 @@
+:root {
+  /* ghostly red colorscheme */
+  --primary-bg: #F2F3F5;
+  --primary-fg: #FF0026;
+  --primary-fg-d: #CC001E;
+  --secondary-bg: #FF3065;
+  --secondary-fg: #F2F3F5;
+  --secondary-fg2: #95FF8E;
+
+  /* fonts */
+  --font-title: 'Eater';
+  --font-main: 'Cabin', sans-serif;
+
+  /* sizes */
+  --size-xl: 3.998rem;
+  --size-l: 2.827rem;
+  --size-m: 1.999rem;
+  --size-s: 1.414rem;
+  --seize-xs: 0.707rem;
+}
+
+*, body, html {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  color: var(--primary-fg); 
+  font-size: var(--size-xl);
+  min-width: 150px;
+  margin-left: 10rem;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background: linear-gradient(to bottom,#95FF8E, #FF3065, #CD4045, #9A0012);
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.3rem;}
+
+h1, h2, h3, h4, h5 {
+  font-weight: inherit;
+  line-height: 1.45;
+  font-family: var(--font-main);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--size-xl);
+}
+
+h2 {
+  font-size: var(--size-l);
+}
+
+h3 {
+  font-size: var(--size-m);
+}
+
+h4 {
+  font-size: var(--size-s);
+}
+
+small, .font--xs, h5 {
+  font-size: var(--size-xs);
+  font-weight: 100;
+}
+
+.title {
+  font-family: var(--font-title);
+}
+
+.flex--row {
+  display: flex;
+}
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items--c {
+  align-items: center;
+}
+
+.justify-cont--s-a {
+  justify-content: space-around;
+}
+
+header { 
+  display: flex;
+  color: var(--primary-fg);
+  background-color: var(--secondary-fg2);
+  box-sizing: border-box;
+  padding: 10px 30px;
+  height: 105px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+header img {
+  padding: 0px 10px;
+}
+
+main {
+  margin-top: 105px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.title {
+  line-height: 1.5;
+}
+
+.nav {
+  width: 40%;
+}
+
+.link--nav {
+  text-decoration: none;
+  color: var(--secondary-fg);
+  transition: border 0.1s;
+  border: 3px solid var(--secondary-bg);
+  background-color: var(--secondary-bg);
+  height: var(--size-xl);
+  padding: 5px 15px;
+  border-radius: calc(var(--size-xl)/2);
+  width: auto;
+  transition: background .3s, border .3s;
+}
+
+.link--nav:hover {
+  background-color: var(--primary-fg-d);
+  border: 3px solid var(--primary-fg-d);
+}
+
+section {
+  padding: 1.414rem;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+footer {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.text-align--c {
+  text-align: center;
+}
+
+.submit-btn {
+  font-size: var(--size-s);
+  color: var(--secondary-fg);
+  line-height: 1.5;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: 5px solid var(--secondary-bg);
+  background-color: var(--secondary-bg);
+  padding: 10px 20px;
+  border-radius: calc(var(--size-xl)/2);
+  width: 300px;
+  height: var(--size-xl);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-fg2);
+  border: 5px solid var(--secondary-fg2);
+  color: var(--secondary-bg);
+} 
+
+input[type=email] {
+  color: white;
+  background-color: transparent;
+  font-size: 1.414rem;
+  line-height: 1.5;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid var(--secondary-bg);
+  width: 20rem;
+}
+
+input[type=email]:focus {
+  color: white;
+}
+
+input[type=email]::-webkit-input-placeholder {
+  color: white;
+}
+
+.mb-3r {
+  margin-bottom: 3rem;
+}
+
+.mb-2r {
+  margin-bottom: 3rem;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.signup {
+  margin: 3rem;
+}
+
+.mb-1fr {
+  margin-bottom: 1.414rem;
+}
+
+.mb-2fr {
+  margin-bottom: 2.121rem;
+}
+
+.features, .pricing {
+  background: var(--primary-bg);
+}
+
+.img--header {
+  height: var(--size-xl);
+  width: var(--size-xl);
+}
+
+.height--a {
+  height: 100%;
+}
+
+iframe {
+  display: block;
+  align-self: center;
+  margin: 20px auto;
+}
+
+.secondary--fg {
+  color: var(--secondary-fg);
+}
+
+.secondary--fg-2 {
+  color: var(--secondary-fg2);
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .mobile--hide {
+    display: none;
+  }
+  .pricing--card {
+    width: 30%;
+  }
+  input[type=email] {
+    border: none;
+    text-align: center;
+  }
+}

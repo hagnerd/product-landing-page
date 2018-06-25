@@ -8,108 +8,135 @@
   <title>Product Landing Page</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Scope+One" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Scope+One" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Eater" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
 
   <link rel="stylesheet" href="index.css">
 
-  <!-- Testing Suite -->
   <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  <!-- Testing Suite -->
 </head>
 
 <body>
 
-  <header class="flex--row">
-    <h1>Trackly</h1>
+  <header id="header" class="flex--row align-items--c">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Chilli_pepper_4.svg/2000px-Chilli_pepper_4.svg.png" alt=""
+      id="header-img" class="img--header" />
+    <h1 id="title" class="title upcase">Ghost.ly</h1>
     <!-- Place sticky navbar here  -->
-    <nav class="nav flex--row">
-      <h3>Features</h3>
-      <h3>About Us</h3>
-      <h3>Pricing</h3>
+    <nav class="nav flex--row ml-auto justify-cont--s-a mobile--hide" id="nav-bar">
+      <h5>
+        <a href="#features" class="nav-link link--nav upcase">Features</a>
+      </h5>
+      <h5>
+        <a href="#about-us" class="nav-link link--nav upcase">About Us</a>
+      </h5>
+      <h5>
+        <a href="#pricing" class="nav-link link--nav upcase">Pricing</a>
+      </h5>
     </nav>
+
+    </div>
   </header>
 
-  <main>
-    <section class="">
-      <h2 class="upcase">Sign up to find out more</h2>
-      <form>
-        <input type="email" name="email" placeholder="Enter your email address" />
-        <button class="upcase bg--primary" type="submit">sign me up</button>
-      </form>
+  <main class="flex--column justify-cont--c">
+
+    <section class="flex--column justify-cont--c">
+      <h2 class="text-align--c">Warning Video</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9G9E8zRb1a4" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
     </section>
 
     <section id="features" class="features">
-      <h2>Features</h2>
+      <h2 class="upcase text-align--c mb-2fr">Features</h2>
       <div class="flex--column">
-        <div class="flex--row">
-          <i class="far fa-address-book"></i>
+        <div class="flex--row align-items--c mb-1fr">
+          <i class="fas fa-fire"></i>
           <div class="flex--column">
-            <h4>Manage Sales Leads</h4>
-            <p class="features--description"></p>
+            <h4>Hotter than s#!+!</h4>
+            <p class="features--description">Guaranteed to burn your mouth for days!</p>
           </div>
         </div>
-        <div class="flex--row">
-          <i class="fas fa-truck-loading"></i>
+        <div class="flex--row align-items--c mb-1fr">
+          <i class="fas fa-utensils"></i>
           <div class="flex--column">
-            <h4>Make Logistics Easy</h4>
-            <p class="features--description"></p>
+            <h4>Put that s#!+ on everything!</h4>
+            <p class="features--description">Ever had a meal you hate? Burn your tastebuds off with ghost peppers, and you'll never have to taste again!</p>
           </div>
         </div>
-        <div class="flex--row">
-          <i class="fas fa-dollar-sign"></i>
-          <div class="flex--row">
-            <h4>Close Sales Faster</h4>
-            <p class="features--description"></p>
+        <div class="flex--row align-items--c mb-1fr">
+          <i class="fas fa-tint"></i>
+          <div class="flex--column">
+            <h4>Real tears</h4>
+            <p class="features--description">Have no feelings, but in a situation where you need to cry? Eat a ghost pepper!</p>
           </div>
         </div>
-        <div class="flex--row">
-          <i class="far fa-file-alt"></i>
-          <div class="flex--row">
-            <h4>Keep Better Reecords</h4>
-            <p class="features--description"></p>
+        <div class="flex--row align-items--c mb-1fr">
+          <i class="fas fa-user-md"></i>
+          <div class="flex--column">
+            <h4>Medical Supervision is advised</h4>
+            <p class="features--description">We can't legally say that you'll be fine after eating a ghost pepper, so instead we recommend that you ingest
+              the pepper in close proximity to a doctor.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about-us" id="about-us">
-      <h2>About Us</h2>
+    <section class="about-us flex-column justify-cont--c" id="about-us">
+      <h2 class="upcase text-align--c secondary--fg">About Us</h2>
+      <p class="text-align--c secondary--fg">Since we were young pepper farmers, we dreamed of bringing our discomfort to everyone around the world. Now you too,
+        can experience the excruciating
+        <del>pain</del> fun of eating ghost peppers.</p>
+      <p class="text-align--c secondary--fg">Our monthly subscription box is dead simple. Pay us, and we'll send you our
+        <del>torturous</del> delicious peppers every month. You don't even have to leave the comfort of your own home.</p>
     </section>
 
     <section class="pricing" id="pricing">
-      <h2>Pricing</h2>
-      <div class="flex--row">
+      <h2 class="upcase text-align--c mb-2fr">Pricing</h2>
+      <div class="flex--row justify-cont--s-a">
         <div class="pricing--card">
-          <h3>Price 1</h3>
+          <h3>Baby's First Pepper</h3>
           <h4 class="pricing--price">$20/Month</h4>
-          <p>Feautre 1</p>
+          <p>1 bundle of 10 peppers</p>
         </div>
         <div class="pricing--card">
-          <h3>Price 2</h3>
+          <h3>Quick Act Natural</h3>
           <h4 class="pricing--price">$50/Month</h4>
-          <p>Feature 1</p>
-          <p>Feature 2</p>
+          <p>1 bundle of 10 peppers</p>
+          <p>1 bottle of Ghost.ly signature sauce of the month*.</p>
         </div>
         <div class="pricing--card">
-          <h3>Price 3</h3>
+          <h3>Why is my mouth numb?</h3>
           <h4 class="pricing--price">$1,000/Year</h4>
-          <p>Feature 1</p>
-          <p>Feature 2</p>
-          <p>Feature 3</p>
+          <p>1 bundle of 10 peppers/Month</p>
+          <p>1 bottle of Ghost.ly signature sauce of the month* every month.</p>
+          <p>1 family pack of Charmin's Ultra Plus toilet paper/Month.</p>
         </div>
       </div>
+      <div>
+        <p class="font--xs">*The sauce of the month is: "Pretty Sure I Can't Feel My Mouth" sauce.</p>
+      </div>
+    </section>
+
+    <section class="signup text-align--c">
+      <h2 class="upcase mb-1fr secondary--fg">Sign up to find out more</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter your email address" />
+        <input type="submit" id="submit" class="upcase submit-btn bg--primary" value="Sign Me Up" />
+      </form>
     </section>
 
   </main>
 
   <footer>
     <!-- Copyright, Contact, Privacy, -->
-    <nav class="flex--row">
-      <a href="">Contact</a>
-      <a href="">Privacy</a>
+    <nav class="flex--row justify-cont--s-a">
+      <a href="#" class="upcase secondary--fg">Contact</a>
+      <a href="#" class="upcase secondary--fg">Privacy</a>
     </nav>
-    <p>Copyright 2018&copy;, Trackly, LLC</p>
+    <p class="secondary--fg-2">Copyright 2018 &copy;, Ghost.ly, LLC</p>
   </footer>
 
 </body>
